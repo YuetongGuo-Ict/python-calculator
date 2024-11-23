@@ -33,3 +33,27 @@ def test_divide(self):
 def test_modulo(self):
     self.assertEqual(modulo(10, 3), 1)
     self.assertRaises(ZeroDivisionError, modulo, 5, 0)
+
+def test_add_additional(self):
+    self.assertEqual(self.calc.add(5, 0), 5)
+    self.assertEqual(self.calc.add(0, 0), 0)
+
+def test_subtract_additional(self):
+    self.assertEqual(self.calc.subtract(0, 5), -5)
+    self.assertEqual(self.calc.subtract(5, 0), 5)
+
+def test_multiply_additional(self):
+    self.assertEqual(self.calc.multiply(0, 5), 0)
+    self.assertEqual(self.calc.multiply(-1, 5), -5)
+
+def test_divide_additional(self):
+    self.assertEqual(self.calc.divide(0, 5), 0) 
+    self.assertAlmostEqual(self.calc.divide(1, 9), 0.111111, places=5) 
+
+
+def test_modulo_additional(self):
+    self.assertEqual(self.calc.modulo(100, 7), 2)
+    self.assertEqual(self.calc.modulo(5, 5), 0)
+
+
+

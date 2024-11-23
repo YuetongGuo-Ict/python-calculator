@@ -32,3 +32,4 @@ if __name__ == "__main__":
     print("Example: multiplication: ", calc.multiply(2, 3))
     print("Example: division: ", calc.divide(10, 2))
     print("Example: modulo: ", calc.modulo(10, 3))
+
